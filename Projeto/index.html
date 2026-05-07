@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Vocação</title>
+
+<body>
+    <h1>Informações do Visitante:</h1>
+    <p>
+        Nome do Aluno(a):
+        <input type="text" id="inNome" placeholder="Nome do Aluno(a)">
+    </p>
+
+    <p>
+        Data de Nascimento:
+        <input type="date" id="inDate" placeholder="Data de Nascimento">
+    </p>
+
+    <p>
+        Nome da Escola:
+        <input type="text" id="inEscola" placeholder="Nome da Escola">
+    </p>
+
+    <p>
+        Serie Escolar:
+        <input type="text" id="inSerie" placeholder="Serie Escolar">
+    </p>
+
+
+    <p>Curso que deseja fazer na Vocação:</p>
+    <label for="date">Escolha o seu Curso:</label>
+    <select id="date">
+        <option value="webDesign" selected>Web Design</option>
+        <option value="programacao">Programação</option>
+        <option value="audioVisual">Audio Visual</option>
+        <option value="ppt">Preparação Para o Trabalho</option>
+        <option value="mentoria">Mentoria</option>
+        <option value="informatica">Informática</option>
+    </select>
+
+    <p>
+        <button onclick="analizarIdade()">Enviar</button>
+    </p>
+    <div id="resultado"></div>
+
+    <script>
+        function analizarIdade(){
+        var nome = document.getElementById("inNome");
+        var res = document.getElementById("resultado");
+        var date = document.getElementById("inDate").value;
+
+        if(idade > 14)
+            alert("Parabéns " + nome + " !! Você concluiu sua Inscrição")
+        }
+
+    </script>
+
+</body>
+
+</html>
