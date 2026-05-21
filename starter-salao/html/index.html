@@ -1,0 +1,394 @@
+<!DOCTYPE html>  <html lang="pt-BR">  <head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <meta name="description"  
+    content="Belle Vie — Beleza, cuidado e bem-estar em um só lugar. Site acessível com HTML semântico, CSS e JavaScript." />  
+  <title>Belle Vie | Beleza, cuidado e bem-estar em um só lugar</title>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+  <link rel="stylesheet" href="../css/style.css" />  
+</head>  <body>  
+  <a class="skip-link" href="#sobre">Pular para o conteúdo</a>    <header class="site-header" role="banner">  
+    <div class="container header-inner">  
+      <a href="#" class="logo" aria-label="Belle Vie - Página inicial">  
+        <img src="../img/Capturar.PNG" alt="Logo do Studio Belle Vie"  
+          style="width: 200px; height: 200px; border-radius: 500px;">  
+        <h1 id="hero-titulo">Studio Belle Vie</h1>  
+        <div class="social-media">    <div class="social-media" style="margin-left: 30px;">     <h3>Conecta-se conosco:</h3>  
+   <a href="#" style="margin-right: 20px;">     </a>  
+  <a href="#" style="margin-right: 20px;">  
+    <i class="fab fa-instagram" style="font-size: 30px;"></i>  
+  </a>    <a href="#" style="margin-right: 20px;">  
+    <i class="fab fa-tiktok" style="font-size: 30px;"></i>  
+  </a>    <a href="#">  
+    <i class="fab fa-whatsapp" style="font-size: 30px;"></i>  
+  </a>  </div>  </div>  
+      </a>  
+      <nav aria-label="Navegação principal">  
+        <ul class="nav-list">  
+          <li><a href="#sobre">Sobre</a></li>  
+          <li><a href="#servicos">Serviços</a></li>  
+          <li><a href="#depoimentos">Depoimentos</a></li>  
+<li><a href="#agendamento-horarios">Agendamento & Horários</a></li>
+          <li><a href="#contato">Contato</a></li>  
+          <li><a href="#formasdepagamento">Formas de Pagamento</a></li>  
+          <li><a href="#nossosparceiros">Nossos Parceiros</a></li>  
+        </ul>  
+      </nav>  
+    </div>  
+  </header>  <a class="skip-link" href="#contato">Pular para o conteúdo</a>
+
+  <main id="conteudo">  
+    <section class="hero" aria-labelledby="hero-titulo">  
+      <div class="container">  
+        <p class="hero-tagline">Sua beleza, Seu briilho, Sua essência</p>  
+<a href="#agendamento-horarios" class="btn btn-primary">Agendar Horário</a>
+      </div>  
+    </section>
+
+    <!-- CARROSSEL -->
+
+<section class="carrossel-section">
+
+  <div class="carrossel">
+
+    <button class="prev"
+    onclick="mudarSlide(-1)">
+      ❮
+    </button>
+
+    <div class="slides">
+
+      <img
+      src="../img/Carroselproduto.PNG"
+      class="slide active">
+
+      <img
+      src="../img/Carrossel.kerastase.PNG"
+      class="slide">
+
+      <img
+      src="../img/carroselunha.PNG"
+      class="slide">
+
+      <img
+      src="../img/carrosselpromo.PNG"
+      class="slide">
+
+    </div>
+
+    <button class="next"
+    onclick="mudarSlide(1)">
+      ❯
+    </button>
+
+  </div>
+
+</section>
+
+
+<section id="sobre"
+aria-labelledby="sobre-titulo"
+class="section">
+  
+    </section>  <section id="sobre" aria-labelledby="sobre-titulo" class="section">  
+  <div class="container">  
+    <div class="card">  
+      <div class="box">  
+        <h2 id="sobre-titulo">Nossa Essência:</h2>  
+        <p>Somos um salão de beleza feminino dedicado ao cuidado, auto-estima e bem-estar das nossas clientes,  
+          oferecemos  
+          serviços de cabelo, unhas e estética.  
+          Nosso compromisso é proporcionar uma experiência acolhedora, personalizada e de alta qualidade,  
+          valorizando a  
+          beleza única de cada pessoa.</p>  
+      </div>  
+</section>  
+
+<section id="servicos" aria-labelledby="servicos-titulo" class="section">  
+  <div class="container">  
+    <div class="card">  
+      <div class="box">  
+  <h2 id="servicos-titulo">Nossos Serviços:</h2>  
+  <p class="section-intro">Cortes, colorações e tratamentos com cronograma de alta qualidade para brilho e saúde capilar:</p>  
+  <div class="cards-grid" role="list">  
+
+    <article class="card">  
+      <img src="../img/cortes.PNG" alt="Imagem representando Corte Feminino"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <h3>Cortes Femininos</h3>  
+      <p>Cortes de cabelo no estilo escolhido do cliente</p>  
+      <p class="price">R$ <span>40-90</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Corte Feminino ao pedido">Adicionar</button>  
+    </article>  
+    <article class="card">  
+      <img src="../img/mechas.png" alt="Imagem representando Coloração"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <h3>Coloração</h3>  
+      <p>Coloração profissional para realçar seu cabelo, Tinta, Luzes, Mechas.</p>  
+      <p class="price">R$ <span>90-150</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Coloração ao pedido">Adicionar</button>  
+    </article>  
+    <article class="card">  
+      <img src="../img/penteado.png" alt="Imagem representando Penteados"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <div class="card-emoji" aria-hidden="true"></div>  
+      <h3>Penteados</h3>  
+      <p>Estilos de penteados personalizados para qualquer ocasião.</p>  
+      <p class="price">R$ <span>100-200</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Penteados ao pedido">Adicionar</button>  
+    </article>  
+    <article class="card">  
+      <img src="../img/escovacao.png" alt="Imagem representando Escova"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <h3>Escovação</h3>  
+      <p>Escova de alta qualidade para dar volume e brilho ao seu cabelo.</p>  
+      <p class="price">R$<span> 30-70</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Escova ao pedido">Adicionar</button>  
+    </article>  
+
+    <article class="card">  
+      <img src="../img/progressiva.PNG" alt="Imagem representando Progressiva"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <div class="card-emoji" aria-hidden="true"></div>  
+      <h3>Progressiva</h3>  
+      <p>Tratamento capilar que alinha o cabelo, reduz o frizz e proporciona brilho e saúde.</p>  
+      <p class="price">R$ <span>120-300</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Progressiva ao pedido">Adicionar</button>  
+    </article>  
+
+    <article class="card">  
+      <img src="../img/manicure.png" alt="Imagem representando Manicure"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <h3>Manicure</h3>  
+      <p>Corte,lixamento, cuidado com as cúticulas e esmaltação impecável.</p>  
+      <p class="price">R$ <span>25-50</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Manicure ao pedido">Adicionar</button>  
+    </article>  
+
+    <article class="card">  
+      <img src="../img/pe.PNG" alt="Imagem representando Pedicure"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <h3>Pedicure</h3>  
+      <p>Cuidados completo para seus pés com hidratação, remoção de rachaduras, massagem relaxante e esmaltação impecável.</p>  
+      <p class="price">R$ <span>30-60</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Pedicure ao pedido">Adicionar</button>  
+    </article>  
+
+    <article class="card">  
+      <img src="../img/make.PNG" alt="Imagem representando Maquiagem"  
+        style="width: 200px; height: 200px; border-radius: 500px;">  
+      <h3>Maquiagem</h3>  
+      <p>Realce sua maquiagem sofisticada com preparação de pele e produção completa, fique preparada para qualquer ocasião especial.</p>  
+      <p class="price">R$<span> 100-200</span></p>  
+      <button type="button" class="btn-add" aria-label="Adicionar Maquiagem ao pedido">Adicionar</button>  
+    </article>  
+
+  </div>  
+  </div>  
+  </div>   
+  </div>  
+  </div>  
+  <div class="pedido-box" role="status" aria-live="polite" aria-atomic="true">  
+    <div class="card">  
+      <div class="box">  
+    <strong>Pedido:</strong> <span id="contador-pedido">0</span> item(ns)  
+  </div>  
+</div>  
+</section>  
+
+<section id="depoimentos" aria-labelledby="depoimentos-titulo" class="section">  
+  <div class="container">  
+    <div class="card">  
+      <div class="box">  
+    <h2 id="comentarios-titulo">Comentários:</h2>  
+    <div class="testimonial" role="region" aria-label="Depoimento de Ana">  
+      <p><strong>Milena P. ⭐⭐⭐⭐⭐</strong></p>  
+      <p>"Adorei o atendimento e os resultados! O ambiente é super acolhedor e a equipe é muito profissional.  
+        Recomendo!"</p>  
+        
+    </div>  
+    <div class="testimonial" role="region" aria-label="Depoimento de Maria">  
+      <p><strong>Maria L. ⭐⭐⭐⭐⭐</strong></p>  
+      <p>"O melhor salão que já frequentei! Os serviços são de alta qualidade e os profissionais são muito  
+        atenciosos."</p>  
+        
+    </div>  
+    <div class="testimonial" role="region" aria-label="Depoimento de Maria">  
+      <p><strong>Joana D. ⭐⭐⭐⭐⭐</strong></p>  
+      <p>"Serviço de excelência! Sempre recebo um atendimento impecável e os resultados são incríveis."</p>  
+
+    </div>  
+  </div>  
+</section>  
+ <div class="video">  
+  <div class="box">  
+    <div class="container">  
+    <div class="card">  
+    
+      <div>  
+    <video width="1000" height="500" controls>  
+    <source src="../video/video1.mp4" type="video/mp4">       
+  </video>  
+  </div>  
+  </div>  
+  </div>  
+  </div>  
+  </div>  
+
+<section id="agendamento-horarios" aria-labelledby="agendamento-horarios-titulo" class="section section-alt">
+  <div class="container">  
+    <div class="card">  
+      <div class="box">  
+        <h2>Agendamento & Horários</h2>  
+        <p>Confira nossos horários disponíveis e agende seu atendimento personalizado. Estamos prontos para cuidar  
+          de você!</p>  
+        <select>  
+          <option value="9h">9:00</option>  
+          <option value="10h">10:00</option>  
+          <option value="11h">11:00</option>  
+          <option value="12h">12:00</option>  
+          <option value="13h">13:00</option>  
+          <option value="14h">14:00</option>  
+          <option value="15h">15:00</option>  
+          <option value="16h">16:00</option>  
+          <option value="17h">17:00</option>  
+        </select>  
+        <input type="date">  
+        <div>  
+
+          <form>  
+            <input type="text" placeholder="Nome Completo" required aria-required="true" />  
+            <input type="email" placeholder="E-mail" required aria-required="true" />  
+            <input type="tel" placeholder="Telefone" required aria-required="true" />  
+
+            <select required>  
+              <option value="corte">Corte Feminino</option>  
+              <option value="penteados">Penteados</option>  
+              <option value="Mechas">Mechas</option>  
+              <option value="Escovação">Escovação</option>  
+              <option value="Manicure">Progressiva</option>  
+              <option value="Pedicure">Pedicure</option>  
+              <option value="Maquiagem">Maquiagem</option>  
+              <option value="Manicure">Manicure</option>  
+            </select>  
+
+            <input type="datetime-local" required>  
+            <a href="https://wa.me/5511986765431?text=Olá%20Studio%20Belle%20Vie,%20gostaria%20de%20agendar%20um%20horário!" target="_blank" rel="noopener noreferrer"></a>  
+            <button type="submit">Agendar pelo WhatsApp</button>  
+          </form>  
+        </div>  
+      </div>  
+    </div>  
+</section>  
+
+
+<section id="contato" aria-labelledby="contato-titulo" class="section">  
+  <div class="container">  
+    <div class="card">  
+      <div class="container">  
+
+        <h2 id="contato-titulo">Contato</h2>  
+        <form class="form" novalidate>  
+          <div class="form-row">  
+            <label for="nome">Nome</label>  
+            <input id="nome" name="nome" type="text" required aria-required="true" />  
+            
+          <div class="form-row">  
+            <label for="email">E-mail</label>  
+            <input id="email" name="email" type="email" required aria-required="true" />  
+
+            <div class="form-row">  
+              <label for="mensagem">Mensagem</label>  
+              <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>  
+
+              <button type="submit" class="btn btn-primary">Enviar</button>  
+              <p class="form-feedback" role="alert" aria-live="assertive" id="form-feedback"></p>  
+              <div class="container">  
+                  
+      <div class="box">
+
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.001034245013!2d-46.7791509!3d-23.640133999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5385d545699f%3A0x679406ba9e867572!2zVm9jYcOnw6NvIC0gU2VkZQ!5e0!3m2!1spt-BR!2sbr!4v1778787252730!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>  
+            </form>  
+            </div>  
+            </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div>  
+      <div>  
+      </div>  
+  </main>  <section id="pagamentos" aria-labelledby="pagamentos-titulo" class="section section-alt">  
+  <div class="container">  
+    <div class="card">  
+      <div class="box">  
+<h2>Formas de pagamento</h2>  
+
+<select>  
+<option>Pix
+
+  </section>  
+  <option>Cartão de crédito</option>  
+  <option>Cartão de débito</option>  
+  <option>Dinheiro</option>  
+  </select>  <button>Confirmar Pagamento</button>
+
+  </section>  
+<section>  
+  <!-- ÁREA VIP -->  
+<section id="vip" class="vip-section">  
+  <div class="container">  
+    <div class="card">  
+      <div class="box">  
+    <h2>Área VIP ✨</h2>    <p>  
+    Clientes fiéis podem solicitar um cartão VIP  
+    personalizado com benefícios exclusivos.  
+  </p>    <button onclick="abrirFormulario()" class="vip-btn">  
+    Solicitar Cartão VIP  
+  </button>  
+</section>    <section id="Nossosparceiros" aria-labelledby="Nossosparceiros-titulo" class="section section-alt">  
+    <div class="container">  
+        <div class="card">  
+          <div class="box">  
+    <h2 id="Nossosparceiros-titulo">Nossos Parceiros ®</h2>  <img src="../img/produtos.png" alt="produtos" style="width: 1000px; height: 500px;">  
+<div class="container">  
+  <p>Conheça as marcas e fornecedores que colaboram conosco para oferecer os melhores serviços e produtos para  
+    nossas clientes:</p>  
+  <ul class="partners-list">  
+    <li><strong>L'Oreal Professionnel:</strong> Produtos profissinais para hidratação, reconstrução e coloração de  
+      alta qualidade.</li>  
+    
+    <li><strong>Wella Profesionals:</strong> Especialista em tinturas, tratamentos capilares e cuidados para todos  
+      os tipos de cabelo.</li>  
+    <li><strong>Truss Professionais:</strong> Produtos modernos para recuperação, proteção e alinhamento capilar.  
+    </li>  
+    <li><strong>Kérastase:</strong> Marca premium focada em nutrição,e brilho, fortalecimento e tratamentos luxuosos  
+      para os fios.</li>  
+  </ul>  
+  </ul>  
+</div>  
+  
+  
+<footer class="footer-container" role="contentinfo">  
+  <div class="box">  
+  <div class="card">  
+      
+</footer>  
+  <div class="logos"style="text-align: center;">  
+  <img src="../img/pix.PNG" alt="Pix" width="50" height="50" style="border-radius: 50%;"/>  
+  <img src="../img/mastercard.PNG" alt="Mastercard" width="50" height="50"style="border-radius: 50%;"/>  
+  <img src="../img/loreal.PNG" alt="L'Oréal" width="50" height="50" style="border-radius: 50%;"/>  
+  <img src="../img/wella.PNG" alt="Wella" width="50" height="50" style="border-radius: 50%;"/>  
+  <img src="../img/truss.PNG" alt="Truss" width="50" height="50" style="border-radius: 50%;"/>  
+  <img src="../img/kerastese.PNG" alt="Kérastase" width="50" height="50" style="border-radius: 50%;"/>  
+
+  <p>&copy; <span id="ano"></span> Studio Slão de Beleza - Todos os direitos reservados — Feito por "Script Sisters" 🔗</p>  
+      </div>  
+  </div>  
+  </div>  
+      
+<script src="script.js"></script>  
+</section>
+
+  </div>  
+  </div>  </body>  
+</html>
