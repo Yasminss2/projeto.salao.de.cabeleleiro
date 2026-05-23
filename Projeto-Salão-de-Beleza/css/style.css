@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* === Tokens === */
 :root {
-  --cor-primaria: rgb(112, 17, 71);
-  --cor-primaria-escura: rgb(85, 14, 39);
-  --cor-fundo:rgb(68, 1, 84); /* verde rgb(179, 210, 54) */
+  --cor-primaria: rgb(211, 175, 55);
+  --cor-primaria-escura: rgb(0, 0, 0);
+  --cor-fundo: rgb(216, 61, 151);
   --cor-superficie: #ffffff;
   --cor-texto: #1a1a1a;
   --cor-muted: #555;
@@ -24,7 +25,7 @@ html {
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background: linear-gradient(105deg, #2b003d, #6d0099);
+  background: linear-gradient(105deg, #cc2795, #ffffff);
   color: var(--cor-texto);
   line-height: 1.6;
 }
@@ -35,36 +36,12 @@ body {
   padding: 0 1.25rem;
 }
 
-/* BENEFÍCIOS */
-.beneficios-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.beneficio-card {
-  width: 250px;
-  height: 190px;
-  background: var(--cor-superficie);
-  padding: 3px 2px;
-  border-radius: 30px;
-  text-align: center;
-}
-
-.beneficio-card p {
-  font-size: 18px;
-  font-family: "Montserrat", inter, gotham, poppins, sans-serif;
-  margin-bottom: 20px;
-}
-
-.beneficio-card i {
-  font-size: 1.7rem;
-  color: var(--cor-primaria-escura);
-  margin-top: 0.6rem;
-}
 
 /* SERVIÇOS */
+.servicos {
+  margin-top: 75px;
+}
+
 .servicos-container {
   display: flex;
   justify-content: center;
@@ -84,6 +61,11 @@ body {
   margin-bottom: 25px;
 }
 
+/* DEPOIMENTOS */
+.depoimentos {
+  margin-top: -30px;
+}
+
 .depoimentos-container {
   display: flex;
   justify-content: center;
@@ -92,13 +74,45 @@ body {
 }
 
 .depoimento-card {
-  width: 240px;
-  height: 180px;
+  width: 300px;
+  height: 150px;
   background: var(--cor-superficie);
   padding: 4px 2px;
   border-radius: 30px;
 }
 
+.depoimento-card p {
+  font-size: 16px;
+  font-family: "Montserrat", inter, gotham, poppins, sans-serif;
+  margin: 20px 30px;
+}
+
+.depoimentos-tittle {
+  font-size: 30px;
+  margin-left: 90px;
+  color: var(--cor-texto);
+}
+
+/* SOBRE NÓS */
+.sobre {
+  margin-top: 40px;
+}
+
+.sobre-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre-card {
+  width: 100%;
+  height: 100%;
+  background: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+/* CARRINHO */
 .carrinho-container {
   display: flex;
   justify-content: center;
@@ -113,6 +127,10 @@ body {
 }
 
 /* HISTÓRICO */
+.historico {
+  margin-top: 50px;
+}
+
 .historico-container {
   display: flex;
   justify-content: center;
@@ -138,7 +156,8 @@ body {
 
 /* === Header === */
 .site-header {
-  background: rgba(47, 1, 58, 0.75); /* Um pouco mais opaco para dar leitura */
+  background: rgba(228, 143, 185, 0.623);
+  /* Um pouco mais opaco para dar leitura */
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -154,7 +173,7 @@ body {
 }
 
 .logo {
-  font-weight: 700px;
+  font-weight: 450px;
   font-size: 1.6rem;
   color: var(--cor-primaria);
   text-decoration: none;
@@ -174,82 +193,27 @@ body {
   font-weight: 500;
 }
 
-/* === Hero === */
-.hero {
-  padding: 20px;
-  background: var(--cor-fundo);
-}
-
-
-.hero-box {
-  position: relative;
-  min-height: 550px;
-  border-radius: 30px;
-  overflow: hidden;
-  padding: 60px;
-  display: flex;
-  align-items: center;
-}
-  /*background: linear-gradient(135deg, #2b003d, #6d0099);*/
-
-
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero-texto h1,
-.hero-texto p,
-.hero-texto a {
-  position: relative;
-  z-index: 4;
-}
-
-
-.hero-texto h1 {
-  font-size: 70px;
-  line-height: 0.9;
-  font-family: "Bebas Neue", sans-serif;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.hero-texto span {
-  color: rgb(252, 182, 1);
-}
-
-.lead {
-  font-size: 18px;
-  font-family: "Montserrat", inter, gotham, poppins, sans-serif;
-  margin-bottom: 25px;
-  color: white;
-}
-
 /* === Seções === */
 .section {
   padding: 2.5rem 0;
 }
 
-.section--alt {
-  background: var(--cor-superficie);
-}
-
-.section h2 {
-  font-size: 1.6rem;
-  margin: 0 0 1.5rem;
-  color: var(--cor-primaria-escura);
+/* Isso faz com que ao selecionar alguma opção no header, ele fique acima dela, não sobre ela */
+#sobre,
+#servicos,
+#pagamentos,
+#parceiros,
+#horarios,
+#depoimentos,
+#contato {
+  scroll-margin-top: 200px;
 }
 
 .center {
   text-align: center;
 }
 
-/* === Cards do cardápio === */
+/* === Cards dos Serviços === */
 .cards {
   list-style: none;
   padding: 0;
@@ -276,7 +240,7 @@ body {
 
 .card-img {
   width: 12.9rem;
-  height: 300px;
+  height: 13.9rem;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: .75rem;
@@ -293,7 +257,7 @@ body {
 
 .card h3 {
   margin: 0 0 .5rem;
-  color: var(--cor-primaria);
+  color: var(--cor-fundo);
   font-size: 1.1rem;
 }
 
@@ -359,11 +323,6 @@ body {
   text-decoration: none;
   font-size: 1rem;
   transition: 0.3s;
-}
-
-.btn-cardapio {
-  background: rgb(253, 182, 2);
-  color: #490a6e;
 }
 
 .btn:hover {
@@ -708,11 +667,27 @@ body {
 
 /* === Footer === */
 .site-footer {
-  background: #3b003d;
   color: #ffffff;
-  padding: 2rem 1rem;
+  padding: 0;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 35px;
+}
+
+.footer-container{
+  overflow: hidden;
+}
+
+.footer-card {
+  background: #111;
+  padding: 2px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-card p {
+  font-size: 15px;
+  color: #fff;
 }
 
 .social-links {
@@ -729,8 +704,77 @@ body {
 }
 
 .social-icon:hover {
-  color: #922ee4;
+  color: var(--cor-primaria);
 }
+
+/* HORÁRIOS */
+.horarios {
+  padding: 25px;
+  margin: 0;
+  margin-top: 35px;
+}
+
+.horarios-card {
+  width: 100%;
+  height: 100%;
+  background: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+ 
+}
+
+/* PARCEIROS */
+.parceiros {
+  padding: 25px;
+  margin-top: 35px;
+}
+
+.parceiros-card {
+  width: 100%;
+  height: 100%;
+  background: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+}
+
+/* PAGAMENTOS */
+.footer-pagamentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagamentos {
+  padding: 25px;
+  margin: 0;
+}
+
+.pagamentos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagamentos h2 {
+  font-size: 25px;
+  color: var(--cor-superficie);
+}
+
+.pagamentos-icon {
+  display: flex;
+  gap: 18px;
+  margin-top: -10px;
+  font-size: 28px;
+}
+
+.pagamentos-icon i {
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.pagamentos-icon i:hover {
+  color: var(--cor-primaria);
+}
+
 
 /* === Responsivo === */
 @media (max-width: 600px) {
