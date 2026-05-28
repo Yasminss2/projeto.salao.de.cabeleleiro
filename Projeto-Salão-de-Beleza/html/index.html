@@ -95,12 +95,30 @@
           </div>
         </div>
       </div>
-    </section><br></br>
 
+<!-- ════════════════════ HISTÓRICO DE PEDIDOS ════════════════════ -->
+  <section id="historico-section" class="historico" aria-label="Histórico de pedidos">
+    <div class="container">
+      <div class="historico-container">
+        <div class="historico-card">
+          <div class="historico-box">
+            <h2>📋 Histórico de pedidos</h2>
+            <div class="historico-acoes">
+              <button class="btn btn-secundario" id="btn-exportar-csv" hidden>⬇ Exportar CSV</button>
+              <button class="btn btn-perigo btn-limpar" id="btn-limpar-historico">🗑 Limpar histórico</button>
+            </div><br>
+            <div class="tabela-wrapper" id="historico-lista">
+              <p class="muted carrinho-vazio">Nenhum pedido registrado ainda.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+</section><br></br>
     <!-- ────────────────────────── DEPOIMENTOS ────────────────────────── -->
-    <section id="depoimentos" class="depoimentos" aria-labelledby="depoimentos-tittle">
-      <h2 class="depoimentos-tittle">O que nossos clientes dizem</h2>
+    <section id="depoimentos" class="depoimentos" aria-labelledby="depoimentos-tittle"><div class="center"><h2 id="depoimentos-tittle">Depoimentos:</h2></div>
       <div class="depoimentos-container">
         <div class="depoimento-card">
           <div class="depoimento-box">
@@ -131,13 +149,46 @@
         <div class="sobre-container">
           <div class="sobre-card">
             <div class="sobre-box"> <!-- Apague caso você não queira uma box e tbm no css -->
-              <h2>Sobre Nós</h2>
-              <p>Coloque aqui a descrição</p>
+            
+
+  <!-- TEXTO -->
+   <!-- ESQUERDA -->
+  <div class="texto-parceiros">
+  <div class="sobre-texto">
+
+    <h2>Onde a Beleza Encontra o Cuidado</h2>
+
+    <p>
+      No Belle Vie, trabalhamos com produtos
+      profissionais e atendimento especializado
+      para valorizar ainda mais sua beleza.
+    </p>
+
+    <p>
+      Nosso salão oferece um ambiente elegante,
+      acolhedor e pensado para você se sentir
+      confiante e maravilhosa.
+    </p>
+
+  </div>
+ <!-- IMAGEM -->
+               <!-- DIREITA -->
+  <div class="texto-parceiros">
+   <section id="sobre" class="sobre" aria-labelledby="sobre-title">
+  <div class="sobre-imagem">
+  <div class="imagem-parceiros">
+  <img src="../img/salao.PNG" alt="Salão Belle Vie"> 
+
+  </div>
+  </div>
+
+</section>
             </div>
           </div>
         </div>
       </div> <!-- Apague caso você não queira uma box e tbm no css  -->
     </section>
+
 
     <!-- HORÁRIOS -->
     <section id="horarios" class="horarios" aria-labelledby="horarios-title">
@@ -145,30 +196,48 @@
         <div class="horarios-container">
           <div class="horarios-card">
             <div class="horarios-box">
-              <h2 id="horarios-title">Horários de Funcionamento</h2>
-              <p>Segunda a Sexta: --</p>
-              <p>Sábado: --</p>
-              <p>Domingo: Fechado</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ────────────────────────── PARCEIROS ────────────────────────── -->
-    <section id="parceiros" class="parceiros" aria-labelledby="parceiros-title">
+              <h2 id="horarios-title">⏰Horários de Funcionamento;</h2>
+              <p>Segunda a Sexta: 9h ás 18h</p>
+              <p>Sábado e Domingo: 9h ás 16h</p>
+               <section id="agendamento-horarios" aria-labelledby="agendamento-horarios-titulo" class="section section-alt">
       <div class="container">
-        <div class="parceiros-container">
-          <div class="parceiros-card">
-            <div class="parceiros-box">
-              <h2 id="parceiros-title">Nossos Parceiros</h2>
-              <p>Coloque aqui os parceiros do salão</p>
+        <div class="card">
+          <div class="box">
+            <h2>Agendamento</h2>
+            <p>Confira nossos horários disponíveis e agende seu atendimento personalizado. Estamos prontos para cuidar
+              de você!</p>
+            <select>
+              <option value="9h">9:00</option>
+              <option value="10h">10:00</option>
+              <option value="11h">11:00</option>
+              <option value="12h">12:00</option>
+              <option value="13h">13:00</option>
+              <option value="14h">14:00</option>
+              <option value="15h">15:00</option>
+              <option value="16h">16:00</option>
+              <option value="17h">17:00</option>
+            </select>
+            <input type="date">
+            <div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+   <a class="whatsapp-btn"
+href="https://wa.me/5511991399173?text=Olá,%20vim%20pelo%20site%20Belle%20Vie%20%20Gostaria%20de%20confirmar%20meu%20agendamento.%20%20Dia:%20__/__%%20Horário:%20__:__%20%20Telefone:%20(__)%20_____-____."
+target="_blank">
+
+Confirmar Agendamento pelo WhatsApp!
+<a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        
+</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </section>
     <!-- (A etapa cliente foi convertida para modal; seção abaixo pode permanecer, mas ficará oculta no fluxo) -->
 
     <!-- ────────────────────────── ETAPA 2: Dados do cliente (agora com modal) ────────────────────────── -->
@@ -224,7 +293,7 @@
         </div>
       </div>
     </div>
-
+  
 
     <!-- ────────────────────────── ETAPA 4: Pagamento (agora em modal) ────────────────────────── -->
     <div class="modal" id="modal-pagamento" hidden role="dialog" aria-modal="true" aria-label="Forma de pagamento">
@@ -293,29 +362,64 @@
       </div>
     </section><br>-->
 
-
   </main>
 
-  <!-- ════════════════════ HISTÓRICO DE PEDIDOS ════════════════════ -->
-  <section id="historico-section" class="historico" aria-label="Histórico de pedidos">
-    <div class="container">
-      <div class="historico-container">
-        <div class="historico-card">
-          <div class="historico-box">
-            <h2>📋 Histórico de pedidos</h2>
-            <div class="historico-acoes">
-              <button class="btn btn-secundario" id="btn-exportar-csv" hidden>⬇ Exportar CSV</button>
-              <button class="btn btn-perigo btn-limpar" id="btn-limpar-historico">🗑 Limpar histórico</button>
-            </div><br>
-            <div class="tabela-wrapper" id="historico-lista">
-              <p class="muted carrinho-vazio">Nenhum pedido registrado ainda.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- VÍDEO -->
+<section class="video">
 
+</div>
+</div>
+  
+
+  <iframe
+    width="100%"
+    height="500"
+    src="../video/video1.mp4"
+    title="YouTube video player"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+
+</section>
+    <!-- PARCEIROS -->
+  <!-- IMAGEM GRANDE -->
+  <section class="section">
+
+    <div class="container">
+    
+    <div class="footer-box">
+      <section class="parceiros">
+
+  <section class="parceiros">
+
+  <!-- ESQUERDA -->
+  <div class="texto-parceiros">
+
+    <h2>Nossos Parceiros</h2>
+
+    <p>
+      Trabalhamos com produtos profissionais
+      para garantir qualidade e cuidado
+      aos seus cabelos.
+    </p>
+
+    <ul>
+      <li>Truss</li>
+      <li>Kérastase</li>
+      <li>L'Oréal Professionnel</li>
+    </ul>
+
+  </div>
+
+
+  <!-- DIREITA -->
+  <div class="imagem-parceiros">
+<img src="../img/produtos.png" alt="Produtos de cabelo">
+
+  </div>
+
+</section>
+  </section>
 
   <!-- ════════════════════════ MODAL DE CONFIRMAÇÃO ═══════════════════════ -->
   <div class="modal" id="modal-confirmar" hidden role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
@@ -352,7 +456,6 @@
     </section>-->
     <!--  ────────────────────────── PAGAMENTOS  ────────────────────────── -->
 
-
     <div class="footer-container">
 
   </footer>
@@ -380,6 +483,16 @@
   </div>
   </div>
 
+
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+
+  <h2>Belle Vie</h2>
+
+  <p>Seu salão de beleza.</p>
+
+</footer>
 
 
 

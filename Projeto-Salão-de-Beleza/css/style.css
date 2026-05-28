@@ -2,13 +2,13 @@
 
 /* === Tokens === */
 :root {
-  --cor-primaria: rgb(211, 175, 55);
+  --cor-primaria: rgb(228, 190, 21);
   --cor-primaria-escura: rgb(0, 0, 0);
   --cor-fundo: rgb(216, 61, 151);
   --cor-superficie: #ffffff;
-  --cor-texto: #1a1a1a;
-  --cor-muted: #555;
-  --cor-borda: #e6e1d8;
+  --cor-texto: #000000ec;
+  --cor-muted: #bb3a3acb;
+  --cor-borda: #ff00bf;
   --raio: 20px;
   --sombra: 0 6px 20px rgba(85, 7, 39, 0.356);
   --max: 1100px;
@@ -25,7 +25,7 @@ html {
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background: linear-gradient(105deg, #cc2795, #ffffff);
+  background: linear-gradient(105deg, #bd4f4f, #ffffff);
   color: var(--cor-texto);
   line-height: 1.6;
 }
@@ -100,10 +100,42 @@ body {
 
 .sobre-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
 }
 
+/* garante que nada quebra o layout do Sobre */
+.sobre-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.sobre-imagem {
+  order: 1;
+}
+
+.sobre-texto {
+  order: 2;
+  flex: 1;
+}
+
+/* garante que o layout interno da seção fique sempre em duas colunas */
 .sobre-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.sobre-card > * {
+  flex: 1;
+}
+
+
+.sobre-card { 
   width: 100%;
   height: 100%;
   background: var(--cor-superficie);
@@ -156,7 +188,7 @@ body {
 
 /* === Header === */
 .site-header {
-  background: rgba(228, 143, 185, 0.623);
+  background: rgba(219, 24, 121, 0.466);
   /* Um pouco mais opaco para dar leitura */
   backdrop-filter: blur(10px);
   position: sticky;
@@ -505,7 +537,7 @@ body {
 }
 
 #carrinho-badge {
-  background: #fff;
+  background: #ffffff;
   color: var(--cor-primaria);
   border-radius: 999px;
   padding: .1rem .5rem;
@@ -645,7 +677,7 @@ body {
 /* === Aviso de configuração Sheets === */
 .aviso-sheets {
   background: #fff8e1;
-  border: 1px solid #f0c040;
+  border: 1px solid #bd183cea;
   border-radius: var(--raio);
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
@@ -678,7 +710,7 @@ body {
 }
 
 .footer-card {
-  background: #111;
+  background: #c0416bd3;
   padding: 2px 5px;
   display: flex;
   flex-direction: column;
@@ -796,3 +828,94 @@ body {
     font-size: .8rem;
   }
 }
+.whatsapp-btn{
+  display: inline-block;
+  background-color: #14cf5c;
+  color: #ddbf17;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover{
+  background-color: #df3a94;
+  transform: scale(1.05);
+}
+.parceiros{
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  padding: 80px;
+
+  background: #f8dce2;
+
+  gap: 50px;
+}
+
+
+/* TEXTO */
+
+.texto-parceiros{
+  width: 50%;
+  min-width: 280px;
+}
+
+
+.texto-parceiros h2{
+  font-size: 40px;
+
+  color: #7a4450;
+}
+
+.texto-parceiros p{
+  font-size: 18px;
+
+  color: #555;
+}
+
+.texto-parceiros ul{
+  margin-top: 20px;
+}
+
+.texto-parceiros li{
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+
+
+/* IMAGEM */
+
+
+.imagem-parceiros{
+  width: auto;
+  max-width: 420px;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imagem-parceiros img{
+  width: 100%;
+  height: auto;
+  border-radius: 100px;
+}
+
+.sobre-imagem{
+  width: 50%;
+}
+
+.sobre-imagem img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
